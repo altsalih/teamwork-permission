@@ -11,10 +11,8 @@
             "Maosal\\TeamworkPermission\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Salih Maoui"
-        }
-    ],
+    "authors": [{
+        "name": "Salih Maoui"
+    }],
     "minimum-stability": "dev"
 }
