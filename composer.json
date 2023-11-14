@@ -1,9 +1,17 @@
 {
     "name": "maosal/teamwork-permission",
     "description": "Permission Manager for Mpociot\\Teamwork",
+    "keywords": ["teamwork", "teamroles", "roles", "permission"],
     "type": "library",
     "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0|^10.0",
         "mpociot/teamwork": "^8.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     },
     "license": "MIT",
     "autoload": {
@@ -11,8 +19,19 @@
             "Maosal\\TeamworkPermission\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Maosal\\TeamworkPermission\\Tests\\": "tests"
+        }
+    },
     "authors": [{
-        "name": "Salih Maoui"
+        "name": "Salih Maoui",
+        "email": "salah.maoui@gmail.com"
     }],
-    "minimum-stability": "dev"
+    "support": {
+        "issues": "https://github.com/altsalih/teamwork-permission/issues",
+        "source": "https://github.com/altsalih/teamwork-permission"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
