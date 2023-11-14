@@ -1,0 +1,20 @@
+{
+    "name": "maosal/teamwork-permission",
+    "description": "Permission Manager for Mpociot\\Teamwork",
+    "type": "library",
+    "require": {
+        "mpociot/teamwork": "^8.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Maosal\\TeamworkPermission\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Salih Maoui"
+        }
+    ],
+    "minimum-stability": "dev"
+}

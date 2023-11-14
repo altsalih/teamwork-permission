@@ -1,0 +1,61 @@
+{
+    "name": "mpociot/teamwork",
+    "license": "MIT",
+    "description": "User to Team associations for the Laravel 5 Framework",
+    "keywords": [
+        "Teams",
+        "Invite"
+    ],
+    "homepage": "http://github.com/mpociot/teamwork",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "m.pociot@gmail.com"
+        },
+        {
+            "name": "Oliver Kaufmann",
+            "email": "okaufmann91@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mpociot/teamwork/issues",
+        "source": "https://github.com/mpociot/teamwork"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0|^10.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5.1",
+        "illuminate/database": "^9.0|^10.0",
+        "orchestra/testbench": "^7.0|^8.0",
+        "doctrine/dbal": "^2.10|^3.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Mpociot\\Teamwork\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mpociot\\Teamwork\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mpociot\\Teamwork\\TeamworkServiceProvider"
+            ],
+            "aliases": {
+                "Teamwork": "Mpociot\\Teamwork\\Facades\\Teamwork"
+            }
+        }
+    }
+}
